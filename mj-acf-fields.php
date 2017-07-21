@@ -5,12 +5,17 @@
  * Author: Kevin Kernegger
  * Author URI: https://regenrek.at
  * Version: 0.1
- * Plugin URI: http://code.macherjek.com:7990
+ * Plugin URI: http://code.macherjek.com:7990/projects/MJPLUG/repos/mj-acf-fields/browse
  */
 
-require __DIR__ . 'src/utils.php';
+define( 'MJ_ACF_FIELDS_PLUGIN_DIR', plugin_dir_path( __FILE__  ));
+
+
+require plugin_dir_path(__FILE__) . '/src/utils.php';
+
 
  add_action('after_setup_theme', function () {
-     require __DIR__.'/src/main.php';
+ 	require_if_theme_supports('mj-acf-fields', __DIR__.'/src/main.php');
  }, 100);
+
 ?>

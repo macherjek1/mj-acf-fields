@@ -4,6 +4,10 @@
 
 ## Installation
 
+If you use our mjstack (mjbedrock, mjtheme, mjtheme-child) you don't need to
+include this plugin manually since its built in within the mjbedrock/composer.json
+file.
+
 Composer:
 
 ```json
@@ -12,10 +16,49 @@ Composer:
             "type": "vcs",
             "url": "git@code.macherjek.com/mjplug/mj-acf-fields.git"
         }
-    }
+    },
+    "require": {
+		"macherjek/wp-acf-fields": "^0.0.1",
+	}
 ```
 
 Notice: Since this a private repository you need a valid public key
 to install the plugin
 
 or install it via upload (.zip)
+
+
+## Included Page Blocks
+
+### Content Block
+
+@TODO Add Description
+
+### Image Block
+
+@TODO Add Description
+
+### Page Block
+
+@TODO Add Description
+
+### Price Table
+
+@TODO Add Description
+
+### Shortcode
+
+@TODO Add Description
+
+### Title Block
+
+@TODO Add Description
+
+### Video Block
+
+@TODO Add Description
+
+## Release History
+
+* 0.0.1
+	* Work in progress, initial Plugin
