@@ -15,7 +15,7 @@ require plugin_dir_path(__FILE__) . '/src/utils.php';
 
 
  add_action('after_setup_theme', function () {
- 	require_if_theme_supports('mj-acf-fields', __DIR__.'/src/main.php');
+ 	require __DIR__ . '/src/main.php';
  }, 100);
 
 ?>
