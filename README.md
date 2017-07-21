@@ -60,5 +60,8 @@ or install it via upload (.zip)
 
 ## Release History
 
+* 0.0.2/0.0.3
+    * Remove theme support require - not needed; commit message
+
 * 0.0.1
 	* Work in progress, initial Plugin
