@@ -89,6 +89,10 @@ Filename: content-block.php
 
 ## Release History
 
+
+* 0.0.2/0.0.4
+    * Fixed Child Theme override problem
+
 * 0.0.2/0.0.3
     * Remove theme support require - not needed; commit message
 
