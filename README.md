@@ -28,9 +28,38 @@ to install the plugin
 or install it via upload (.zip)
 
 
+## Usage
+
+You can find predefined Page Blocks inside the templates folder which
+gives you the ability to Build your own Page Layout with ACF Grid Layout.
+
+
+### Use your own Templates
+
+If you wan't to override a template for your own needs just
+create a folder inside your theme named template-parts/visual-editor.
+
+For example if you want to create your own Title Block
+create a file named title-block inside the visual-editor folder.
+
+```
+	- mjtheme-child
+	-- template-parts
+	---- visual-editor
+	----- title-block.php
+	----- other-page-block.php
+```
+
+This should also work in your parent theme (if you don't use
+a child Theme)
+
+
+
 ## Included Page Blocks
 
 ### Content Block
+
+Filename: content-block.php
 
 @TODO Add Description
 
