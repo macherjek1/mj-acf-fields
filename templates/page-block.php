@@ -1,7 +1,13 @@
 
 <?php // Include a Custom Page Block which is defined under custom ?>
 <?php if(get_sub_field('page_block_name')) : ?>
-  <?php get_template_part( 'template-parts/flexibles/custom/' . get_sub_field('page_block_name') ? get_sub_field('page_block_name')); ?>
+  <?php get_template_part('template-parts/flexibles/custom/' . get_sub_field('page_block_name')); ?>
+  <?php
+  				Utils\mj_get_template_part(get_sub_field('page_block_name'), apply_filters('mj/acf_fields/template_loop_paths', [
+  					'template-parts/flexibles/visual-editor/custom',
+  					'template-parts/visual-editor/loops'
+  				]));
+  ?>
 <?php
   // Use default query loop
   else: ?>
@@ -30,6 +36,9 @@
   ?>
   <?php if($query->have_posts()) : ?>
     <div class="page-block latest-posts" data-node-type="latest-posts-block">
+      <?php if(get_sub_field('mj_pageblock_title')) : ?>
+        <h3><?= get_sub_field('mj_pageblock_title') ?></h3>
+      <?php endif; ?>
       <div class="grid">
         <div class="grid-sizer"></div>
         <?php while ($query->have_posts()) : $query->the_post(); ?>
