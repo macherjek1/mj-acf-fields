@@ -45,9 +45,13 @@ create a file named title-block inside the visual-editor folder.
 ```
 	- mjtheme-child
 	-- template-parts
+
 	---- visual-editor
 	----- title-block.php
 	----- other-page-block.php
+
+	----- loop
+	------- loop-some-cpt.php
 ```
 
 This should also work in your parent theme (if you don't use
