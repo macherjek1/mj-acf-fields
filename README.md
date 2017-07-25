@@ -59,7 +59,7 @@ a child Theme)
 
 ### Content Block
 
-Filename: content-block.php
+_Filename_: content-block.php
 
 @TODO Add Description
 
@@ -69,7 +69,14 @@ Filename: content-block.php
 
 ### Page Block
 
-@TODO Add Description
+A Page Block is intended to loop over custom post types, posts,
+page or anything you want. You can choose the Post Type in the checkbox
+or choose your own Template. Beware that you need to put your
+custom loop templates inside your theme/template-parts/visual-editor/loops
+folder. See examples for more information.
+
+
+_Filename_: page-block.php
 
 ### Price Table
 
@@ -89,9 +96,9 @@ Filename: content-block.php
 
 ## Release History
 
-
-* 0.0.2/0.0.4
+* 0.0.4
     * Fixed Child Theme override problem
+		* Preparing for Updating fields
 
 * 0.0.2/0.0.3
     * Remove theme support require - not needed; commit message

@@ -5,6 +5,10 @@
   "tested": "4.7",
   "changelog": [
     {
+      "version": "0.0.4",
+      "description": "Preparing Updating Fields - currently stabe"
+    },
+    {
       "version": "0.0.3",
       "description": "Fixed Child Theme override problem"
     },
