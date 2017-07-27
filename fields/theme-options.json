@@ -1,0 +1,665 @@
+[
+    {
+        "key": "group_5808cb84ebc84",
+        "title": "Allgemeine Kontaktinfos",
+        "fields": [
+            {
+                "placement": "top",
+                "endpoint": 0,
+                "key": "field_592a6d7d71317",
+                "label": "Allgemeine Informationen",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "key": "field_5808cb1e08df4",
+                "label": "Firma",
+                "name": "cust_company",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "key": "field_5808cb3208df5",
+                "label": "Vorname",
+                "name": "cust_firstname",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "key": "field_5808cb3d08df6",
+                "label": "Nachname",
+                "name": "cust_lastname",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "key": "field_5808cb4408df7",
+                "label": "Adresse",
+                "name": "cust_address",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "key": "field_5808cb5d08df8",
+                "label": "PLZ",
+                "name": "cust_zip",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "key": "field_5808cb7308df9",
+                "label": "Ort",
+                "name": "cust_location",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "key": "field_5808cbbd08dfa",
+                "label": "Telefon",
+                "name": "cust_phone",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "key": "field_5808cc92763f6",
+                "label": "Fax",
+                "name": "cust_fax",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "key": "field_5808cbc908dfb",
+                "label": "E-Mail Adresse",
+                "name": "cust_mail",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "key": "field_5808cbe708dfc",
+                "label": "UID Nummer",
+                "name": "cust_taxnr",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "key": "field_5808cbf108dfd",
+                "label": "Firmenbuchnummer",
+                "name": "cust_fn",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "placement": "top",
+                "endpoint": 0,
+                "key": "field_592a6da271318",
+                "label": "Social & Google",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "key": "field_592a6dbe71319",
+                "label": "Google Analytics Tracking ID",
+                "name": "mj_ga_tracking_id",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "key": "field_593a958eb7651",
+                "label": "Facebook App ID",
+                "name": "mj_ga_facebook_id",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            },
+            {
+                "default_value": "",
+                "new_lines": "",
+                "maxlength": "",
+                "placeholder": "",
+                "rows": "",
+                "key": "field_593be23bf302f",
+                "label": "Facebook Pixel Code",
+                "name": "facebook_pixel",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                }
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "theme-customer-settings"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "",
+        "local": "php"
+    },
+    {
+        "key": "group_579f8fcad7d6f",
+        "title": "\u00dcberschriften",
+        "fields": [
+            {
+                "multiple": 0,
+                "allow_null": 0,
+                "choices": {
+                    "Google Font": "Google Font",
+                    "Typekit Font": "Typekit Font",
+                    "Eigene Schriftart": "Eigene Schriftart"
+                },
+                "default_value": [],
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value",
+                "key": "field_579f904a45939",
+                "label": "Quelle",
+                "name": "mj_option_title_font_source",
+                "type": "select",
+                "instructions": "F\u00fcge die gew\u00fcnschte Schriftart in das Stylesheet ein. <b>\/mj-theme\/assets\/styles\/common\/_variables.scss<\/b>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "key": "field_579f8fcc68ccd",
+                "label": "Eigene Schriftart",
+                "name": "mj_option_title_custom_font",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_579f904a45939",
+                            "operator": "==",
+                            "value": "Eigene Schriftart"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_579f8fed68cce",
+                "label": "Google Schriftart",
+                "name": "mj_option_title_google_font",
+                "type": "google_font_selector",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_579f904a45939",
+                            "operator": "==",
+                            "value": "Google Font"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_579f904a45939",
+                            "operator": "==",
+                            "value": "Google Font"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "include_web_safe_fonts": 1,
+                "enqueue_font": 1,
+                "default_font": "Droid Sans"
+            },
+            {
+                "default_value": "",
+                "new_lines": "",
+                "maxlength": "",
+                "placeholder": "",
+                "rows": "",
+                "key": "field_579f917e45986",
+                "label": "Typekit Schriftart",
+                "name": "mj_option_title_typekit_font",
+                "type": "textarea",
+                "instructions": "Kompletten Embedded Code hier einf\u00fcgen",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_579f904a45939",
+                            "operator": "==",
+                            "value": "Typekit Font"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "key": "field_579f9b19d26db",
+                "label": "Schriftart",
+                "name": "mj_option_title_typekit_font_family",
+                "type": "text",
+                "instructions": "Noch nicht implementiert. F\u00fcge die gew\u00fcnschte Schriftart in das Stylesheet ein. <b>\/mj-theme\/assets\/styles\/common\/_variables.scss<\/b>",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_579f904a45939",
+                            "operator": "==",
+                            "value": "Typekit Font"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "readonly": 0,
+                "disabled": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-schriften"
+                }
+            ]
+        ],
+        "menu_order": 5,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_579f9c45e861a",
+        "title": "Paragraph",
+        "fields": [
+            {
+                "multiple": 0,
+                "allow_null": 0,
+                "choices": {
+                    "Google Font": "Google Font",
+                    "Typekit Font": "Typekit Font",
+                    "Eigene Schriftart": "Eigene Schriftart"
+                },
+                "default_value": [],
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "return_format": "value",
+                "key": "field_579f9c45ed463",
+                "label": "Quelle",
+                "name": "mj_option_p_font_source",
+                "type": "select",
+                "instructions": "F\u00fcge die gew\u00fcnschte Schriftart in das Stylesheet ein. <b>\/mj-theme\/assets\/styles\/common\/_variables.scss<\/b>",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "key": "field_579f9c45edc34",
+                "label": "Eigene Schriftart",
+                "name": "mj_option_p_custom_font",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_579f9c45ed463",
+                            "operator": "==",
+                            "value": "Eigene Schriftart"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_579f9c45ee443",
+                "label": "Google Schriftart",
+                "name": "mj_option_p_google_font",
+                "type": "google_font_selector",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_579f9c45ed463",
+                            "operator": "==",
+                            "value": "Google Font"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_579f9c45ed463",
+                            "operator": "==",
+                            "value": "Google Font"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "include_web_safe_fonts": 1,
+                "enqueue_font": 1,
+                "default_font": "Droid Sans"
+            },
+            {
+                "default_value": "",
+                "new_lines": "",
+                "maxlength": "",
+                "placeholder": "",
+                "rows": "",
+                "key": "field_579f9c45eebd6",
+                "label": "Typekit Schriftart",
+                "name": "mj_option_p_typekit_font",
+                "type": "textarea",
+                "instructions": "Kompletten Embedded Code hier einf\u00fcgen",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_579f9c45ed463",
+                            "operator": "==",
+                            "value": "Typekit Font"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "default_value": "",
+                "maxlength": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "key": "field_579f9c45ef3a4",
+                "label": "Schriftart",
+                "name": "mj_option_p_typekit_font_family",
+                "type": "text",
+                "instructions": "F\u00fcge die gew\u00fcnschte Schriftart in das Stylesheet ein. <b>\/mj-theme\/assets\/styles\/common\/_variables.scss<\/b>",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_579f9c45ed463",
+                            "operator": "==",
+                            "value": "Typekit Font"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "readonly": 0,
+                "disabled": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "acf-options-schriften"
+                }
+            ]
+        ],
+        "menu_order": 6,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": "",
+        "local": "php"
+    }
+]

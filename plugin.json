@@ -1,0 +1,36 @@
+{
+	"name": "MJ-ACF-Fields",
+	"version": "0.0.5",
+	"download_url": "http://code.macherjek.com:7990/rest/api/latest/projects/MJPLUG/repos/mj-acf-fields/archive?at=refs%2Ftags%2F0.0.5&format=zip",
+
+	"homepage": "http://macherjek.at/",
+	"requires": "4.5",
+	"tested": "4.8",
+	"last_updated": "2017-07-27 12:00:00",
+	"upgrade_notice": ".",
+
+	"author": "Kevin Kernegger",
+	"author_homepage": "http://www.macherjek.at",
+
+	"sections": {
+		"description": "This plugin gives you prefedefined page-blocks which you can use with ACF Grid Layout. It works well with our mjtheme",
+		"installation": "Just hit the Installation Button",
+		"changelog": "",
+		"custom_section": "This is a custom section labeled 'Custom Section'."
+	},
+
+	"banners": {
+		"low": "",
+		"high": ""
+	},
+
+	"translations": [
+		{}
+	],
+
+	"rating": 100,
+	"num_ratings": 100,
+
+	"downloaded": 100,
+	"active_installs": 100
+}

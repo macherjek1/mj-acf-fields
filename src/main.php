@@ -17,6 +17,8 @@ class MJ_ACF_Fields {
 			throw new Exception(__('MJ ACF Fields requires ACF Fields Pro 5+', 'mj'));
 		}
 
+		$this->check_for_updates();
+
 		add_shortcode('mj_acf_fields', array($this, 'render'));
 	}
 
@@ -51,6 +53,14 @@ class MJ_ACF_Fields {
 
 	public function get_update_url() {
 		return UpdateUrl::UPDATE_URL;
+	}
+
+	public function check_for_updates() {
+		$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+			'http://code.macherjek.com:7990/projects/MJPLUG/repos/mj-acf-fields/raw/plugin.json?at=refs%2Fheads%2Fmaster',
+			__FILE__,
+			'unique-plugin-or-theme-slug'
+		);
 	}
 }
 mjtheme()->mj_acf_fields = new MJ_ACF_Fields();

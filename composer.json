@@ -1,5 +1,5 @@
 {
     "require": {
-        "wordplate/acf": "^2.0"
+        "yahnis-elsts/plugin-update-checker": "^4.2"
     }
 }

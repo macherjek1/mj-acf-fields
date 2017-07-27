@@ -13,6 +13,7 @@ define( 'MJ_ACF_FIELDS_PLUGIN_DIR', plugin_dir_path( __FILE__  ));
 
 require plugin_dir_path(__FILE__) . '/src/utils.php';
 require plugin_dir_path(__FILE__) . '/admin/UpdateUrl.php';
+require plugin_dir_path(__FILE__) . '/vendor/yahnis-elsts/plugin-update-checker/plugin-update-checker.php';
 
 
  add_action('after_setup_theme', function () {

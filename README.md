@@ -100,9 +100,13 @@ _Filename_: page-block.php
 
 ## Release History
 
+* 0.0.5
+ * Allow import/export fields via mjtheme Panel
+ * Added Auto-Updater feature
+
 * 0.0.4
-    * Fixed Child Theme override problem
-		* Preparing for Updating fields
+ * Fixed Child Theme override problem
+ * Preparing for Updating fields
 
 * 0.0.2/0.0.3
     * Remove theme support require - not needed; commit message
