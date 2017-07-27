@@ -59,7 +59,7 @@ class MJ_ACF_Fields {
 		$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 			'http://code.macherjek.com:7990/projects/MJPLUG/repos/mj-acf-fields/raw/plugin.json?at=refs%2Fheads%2Fmaster',
 			__FILE__,
-			'unique-plugin-or-theme-slug'
+			'mj-acf-fields'
 		);
 	}
 }
