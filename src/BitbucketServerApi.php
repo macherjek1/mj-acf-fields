@@ -13,11 +13,18 @@ if ( !class_exists('BitbucketServerApi', false) ):
      */
     private $repository;
 
+    /**
+     * @var string
+     */
+    private $restApiUrl;
+
     private $pluginName;
 
-    public function __construct($repositoryUrl, $credentials = array()) {
+    public function __construct($repositoryUrl, $restApiUrl, $credentials = array()) {
       $this->repository = $repositoryUrl;
+      $this->restApiUrl = $restApiUrl;
       $this->pluginName = basename($repositoryUrl);
+
       parent::__construct($repositoryUrl, $credentials);
     }
 
@@ -49,7 +56,7 @@ if ( !class_exists('BitbucketServerApi', false) ):
      * @return [type]             [description]
      */
     public function getBranch($branchName) {
-      $branch = $this->api('/refs/branches/' . $branchName);
+      $branch = $this->api('branches?base=' . $branchName);
       exit;
       if ( is_wp_error($branch) || empty($branch) ) {
         return null;
@@ -69,16 +76,16 @@ if ( !class_exists('BitbucketServerApi', false) ):
      * @return Puc_v4p2_Vcs_Reference|null
      */
     public function getTag($tagName) {
-      $tag = $this->api('/tags/' . $tagName);
+      $tag = $this->api('tags/' . $tagName);
       if ( is_wp_error($tag) || empty($tag) ) {
         return null;
       }
 
       return new Puc_v4p2_Vcs_Reference(array(
-        'name' => $tag->name,
-        'version' => ltrim($tag->name, 'v'),
-        'updated' => $tag->target->date,
-        'downloadUrl' => $this->getDownloadUrl($tag->name),
+        'name' => $tag->displayId,
+        'version' => ltrim($tag->displayId, 'v'),
+        'updated' => null,
+        'downloadUrl' => $this->getDownloadUrl($tag->displayId),
       ));
     }
 
@@ -88,7 +95,7 @@ if ( !class_exists('BitbucketServerApi', false) ):
      * @return Puc_v4p2_Vcs_Reference|null
      */
     public function getLatestTag() {
-      $tags = $this->api('/tags');
+      $tags = $this->api('tags');
 
       if ( !isset($tags, $tags->values) || !is_array($tags->values) ) {
         return null;
@@ -139,9 +146,16 @@ if ( !class_exists('BitbucketServerApi', false) ):
      * @return null|string Either the contents of the file, or null if the file doesn't exist or there's an error.
      */
     public function getRemoteFile($path, $ref = 'master') {
-      //$response = $this->api('src/' . $ref . '/' . ltrim($path), '1.0');
 
-      $response = $this->api("raw/{$this->pluginName}.php?at=refs%2Fheads%2Fmaster");
+      if($ref === "master") {
+        $ref_path = "?at=refs%2Fheads%2F{$ref}";
+      } else {  // tags
+        $ref_path = "?at=refs%2Ftags%2F{$ref}";
+      }
+
+      // no rest url here
+      $response = $this->api("raw/$path$ref_path", false);
+
       if ( is_wp_error($response) || !isset($response, $response->data) ) {
         return null;
       }
@@ -168,9 +182,13 @@ if ( !class_exists('BitbucketServerApi', false) ):
      * @param string $url
      * @return mixed|WP_Error
      */
-    public function api($url) {
+    public function api($url, $rest = true) {
       $options = array('timeout' => 10);
-      $url = $this->repository.$url;
+
+      if(!$rest)
+        $url = $this->restApiUrl.$url;
+      else
+        $url = $this->repository.$url;
 
       $response = wp_remote_get($url, $options);
       if ( is_wp_error($response) ) {

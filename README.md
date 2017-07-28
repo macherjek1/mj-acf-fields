@@ -100,6 +100,9 @@ _Filename_: page-block.php
 
 ## Release History
 
+* 0.0.6
+	Bugfixing for Autoupdate
+
 * 0.0.5
 	* Fixed some Page Blocks
 	* Auto Updater Feature
