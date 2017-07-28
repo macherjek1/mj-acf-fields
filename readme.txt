@@ -1,0 +1,36 @@
+=== Plugin Name ===
+Contributors: Kevin Kernegger
+Donate link: http://www.regenrek.at
+Tags: acf, fields
+Requires at least: 4.7
+Tested up to: 4.8
+Stable tag: 0.0.5
+License: MIT
+License URI: https://opensource.org/licenses/MIT
+
+This plugin gives you prefedefined page-blocks which you can use with ACF Grid Layout.
+
+== Description ==
+
+The MJ-ACF-Fields Plugin has predefined page-block fields which is usable
+with ACF Grid Layout. It works well with our mjtheme
+
+== Changelog ==
+
+= 0.0.5 =
+* Fixed some Page Blocks
+* Auto Updater Feature
+* Allow Import/Export fields via MJTheme Panel
+
+= 0.0.4 =
+* Fixed Child Theme override problem
+* Preparing for Updating fields
+
+= 0.0.3 =
+Some fixes
+
+= 0.0.2 =
+Remove theme support require - not needed; commit message
+
+= 0.0.1 =
+Work in progress, initial Plugin

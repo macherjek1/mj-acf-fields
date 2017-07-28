@@ -184,6 +184,7 @@ if ( !class_exists('Puc_v4p2_Plugin_UpdateChecker', false) ):
 				/** @noinspection PhpIncludeInspection */
 				require_once( ABSPATH . '/wp-admin/includes/plugin.php' );
 			}
+
 			return get_plugin_data($this->pluginAbsolutePath, false, false);
 		}
 

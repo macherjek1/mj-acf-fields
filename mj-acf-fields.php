@@ -10,14 +10,17 @@
 
 define( 'MJ_ACF_FIELDS_PLUGIN_DIR', plugin_dir_path( __FILE__  ));
 
+/**
+ * Require Composer autoloader if installed on it's own
+ */
+if (file_exists($composer = MJ_ACF_FIELDS_PLUGIN_DIR . '/vendor/autoload.php')) {
+    require_once $composer;
+}
 
 require plugin_dir_path(__FILE__) . '/src/utils.php';
-require plugin_dir_path(__FILE__) . '/admin/UpdateUrl.php';
-require plugin_dir_path(__FILE__) . '/vendor/yahnis-elsts/plugin-update-checker/plugin-update-checker.php';
-
+require plugin_dir_path(__FILE__) . '/src/BitbucketServerApi.php';
 
  add_action('after_setup_theme', function () {
  	require __DIR__ . '/src/main.php';
  }, 100);
-
 ?>

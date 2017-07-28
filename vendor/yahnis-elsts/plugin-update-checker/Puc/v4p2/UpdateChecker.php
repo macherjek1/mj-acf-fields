@@ -461,10 +461,12 @@ if ( !class_exists('Puc_v4p2_UpdateChecker', false) ):
 			$result = wp_remote_get($url, $options);
 
 			$result = apply_filters($this->getUniqueName('request_metadata_http_result'), $result, $url, $options);
-			
+
 			//Try to parse the response
 			$status = $this->validateApiResponse($result);
 			$metadata = null;
+			var_dump($result);
+			
 			if ( !is_wp_error($status) ){
 				$metadata = call_user_func(array($metaClass, 'fromJson'), $result['body']);
 			} else {

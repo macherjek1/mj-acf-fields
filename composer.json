@@ -1,5 +1,16 @@
 {
-    "require": {
-        "yahnis-elsts/plugin-update-checker": "^4.2"
-    }
+  "name": "macherjek/mj-acf-fields",
+  "description": "This plugin gives you prefedefined page-blocks which you can use with ACF Grid Layout. It works well with our mjtheme",
+  "authors": [
+        {
+            "name": "Kevin Kernegger",
+            "email": "hello@regenrek.at"
+        }
+  ],
+  "type": "wordpress-plugin",
+  "keywords": ["acf", "plugin"],
+  "license": "MIT",
+  "require": {
+      "yahnis-elsts/plugin-update-checker": "^4.2"
+  }
 }

@@ -42,14 +42,14 @@ if ( !class_exists('Puc_v4p2_Vcs_PluginUpdateChecker') ):
 			$info->filename = $this->pluginFile;
 			$info->slug = $this->slug;
 
-			$this->setInfoFromHeader($this->getPluginHeader(), $info);
 
+			$this->setInfoFromHeader($this->getPluginHeader(), $info);
 			//Pick a branch or tag.
 			$updateSource = $api->chooseReference($this->branch);
 			if ( $updateSource ) {
 				$ref = $updateSource->name;
 				$info->version = $updateSource->version;
-				$info->last_updated = $updateSource->updated;
+				//$info->last_updated = $updateSource->updated;
 				$info->download_url = $updateSource->downloadUrl;
 
 				if ( !empty($updateSource->changelog) ) {
@@ -63,15 +63,16 @@ if ( !class_exists('Puc_v4p2_Vcs_PluginUpdateChecker') ):
 				return null;
 			}
 
+
 			//Get headers from the main plugin file in this branch/tag. Its "Version" header and other metadata
 			//are what the WordPress install will actually see after upgrading, so they take precedence over releases/tags.
 			$mainPluginFile = basename($this->pluginFile);
+
 			$remotePlugin = $api->getRemoteFile($mainPluginFile, $ref);
 			if ( !empty($remotePlugin) ) {
 				$remoteHeader = $this->getFileHeader($remotePlugin);
 				$this->setInfoFromHeader($remoteHeader, $info);
 			}
-
 			//Try parsing readme.txt. If it's formatted according to WordPress.org standards, it will contain
 			//a lot of useful information like the required/tested WP version, changelog, and so on.
 			if ( $this->readmeTxtExistsLocally() ) {

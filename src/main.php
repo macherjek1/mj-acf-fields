@@ -17,9 +17,8 @@ class MJ_ACF_Fields {
 			throw new Exception(__('MJ ACF Fields requires ACF Fields Pro 5+', 'mj'));
 		}
 
-		$this->check_for_updates();
-
 		add_shortcode('mj_acf_fields', array($this, 'render'));
+		add_action('init',	array($this, 'check_for_updates'));
 	}
 
 	public function render() {
@@ -45,22 +44,27 @@ class MJ_ACF_Fields {
 	}
 
 	public function get_version() {
-		ob_start();
-		require MJ_ACF_FIELDS_PLUGIN_DIR . 'version.json';
-		$arr = json_decode(ob_get_clean());
-		return $arr->stable;
+		return $this->updateChecker->getInstalledVersion();
 	}
 
-	public function get_update_url() {
-		return UpdateUrl::UPDATE_URL;
+	public function get_remote_version() {
+		$latestTag =  $this->api->getLatestTag();
+		return $latestTag->version;
+	}
+
+	public function is_update_available() {
+		return $this->updateChecker->getUpdate() === null ? false : true;
+		exit;
 	}
 
 	public function check_for_updates() {
-		$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-			'http://code.macherjek.com:7990/projects/MJPLUG/repos/mj-acf-fields/raw/plugin.json?at=refs%2Fheads%2Fmaster',
-			__FILE__,
-			'mj-acf-fields'
-		);
+		$this->api = new BitbucketServerApi("http://code.macherjek.com:7990/projects/MJPLUG/repos/mj-acf-fields/");
+		$this->updateChecker = new Puc_v4p2_Vcs_PluginUpdateChecker(
+			$this->api,
+			MJ_ACF_FIELDS_PLUGIN_DIR . 'mj-acf-fields.php',
+			'mj-acf-fields');
+
+		$this->updateChecker->setBranch('master');
 	}
 }
 mjtheme()->mj_acf_fields = new MJ_ACF_Fields();
