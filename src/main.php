@@ -58,7 +58,8 @@ class MJ_ACF_Fields {
 	}
 
 	public function check_for_updates() {
-		$this->api = new BitbucketServerApi("http://code.macherjek.com:7990/projects/MJPLUG/repos/mj-acf-fields/");
+		// "http://code.macherjek.com:7990/projects/MJPLUG/repos/mj-acf-fields/"
+		$this->api = new BitbucketServerApi("http://code.macherjek.com:7990/rest/api/latest/projects/MJPLUG/repos/mj-acf-fields/");
 		$this->updateChecker = new Puc_v4p2_Vcs_PluginUpdateChecker(
 			$this->api,
 			MJ_ACF_FIELDS_PLUGIN_DIR . 'mj-acf-fields.php',

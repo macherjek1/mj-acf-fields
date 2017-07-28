@@ -7,23 +7,17 @@
 if ( !class_exists('BitbucketServerApi', false) ):
 
   class BitbucketServerApi extends Puc_v4p2_Vcs_Api {
-    /**
-     * @var Puc_v4p2_OAuthSignature
-     */
-    private $oauth = null;
-
-    /**
-     * @var string
-     */
-    private $username;
 
     /**
      * @var string
      */
     private $repository;
 
+    private $pluginName;
+
     public function __construct($repositoryUrl, $credentials = array()) {
       $this->repository = $repositoryUrl;
+      $this->pluginName = basename($repositoryUrl);
       parent::__construct($repositoryUrl, $credentials);
     }
 
@@ -134,7 +128,7 @@ if ( !class_exists('BitbucketServerApi', false) ):
      * @return string
      */
     protected function getDownloadUrl($ref) {
-      return "http://code.macherjek.com:7990/rest/api/latest/projects/MJPLUG/repos/mj-acf-fields/archive?at=refs%2Ftags%2F{$ref}&format=zip";
+      return $this->repository."archive?at=refs%2Ftags%2F{$ref}&format=zip";
     }
 
     /**
@@ -147,7 +141,7 @@ if ( !class_exists('BitbucketServerApi', false) ):
     public function getRemoteFile($path, $ref = 'master') {
       //$response = $this->api('src/' . $ref . '/' . ltrim($path), '1.0');
 
-      $response = $this->api('raw/mj-acf-fields.php?at=refs%2Fheads%2Fmaster');
+      $response = $this->api("raw/{$this->pluginName}.php?at=refs%2Fheads%2Fmaster");
       if ( is_wp_error($response) || !isset($response, $response->data) ) {
         return null;
       }
@@ -169,18 +163,14 @@ if ( !class_exists('BitbucketServerApi', false) ):
     }
 
     /**
-     * Perform a BitBucket API 2.0 request.
+     * Perform a BitBucket Server API request.
      *
      * @param string $url
-     * @param string $version
      * @return mixed|WP_Error
      */
     public function api($url) {
-
       $options = array('timeout' => 10);
-      //$url = 'http://code.macherjek.com:7990/projects/MJPLUG/repos/mj-acf-field/' . $url;
-      $url = "http://code.macherjek.com:7990/rest/api/latest/projects/MJPLUG/repos/mj-acf-fields" . $url;
-
+      $url = $this->repository.$url;
 
       $response = wp_remote_get($url, $options);
       if ( is_wp_error($response) ) {
@@ -196,7 +186,7 @@ if ( !class_exists('BitbucketServerApi', false) ):
 
       return new WP_Error(
         'puc-bitbucket-http-error',
-        'BitBucket API error. HTTP status: ' . $code
+        'BitBucket Server API error. HTTP status: ' . $code
       );
     }
   }
