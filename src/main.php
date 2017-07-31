@@ -19,6 +19,7 @@ class MJ_ACF_Fields {
 
 		add_shortcode('mj_acf_fields', array($this, 'render'));
 		add_action('init',	array($this, 'check_for_updates'));
+		add_filter( 'http_request_args', array($this, 'allow_unsafe_urls'));
 	}
 
 	public function render() {
@@ -68,6 +69,11 @@ class MJ_ACF_Fields {
 			'mj-acf-fields');
 
 		$this->updateChecker->setBranch('master');
+	}
+
+	function allow_unsafe_urls($args) {
+		$args['reject_unsafe_urls'] = false;
+		return $args;
 	}
 }
 mjtheme()->mj_acf_fields = new MJ_ACF_Fields();
