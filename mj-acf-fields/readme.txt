@@ -4,7 +4,7 @@ Donate link: http://www.regenrek.at
 Tags: acf, fields
 Requires at least: 4.7
 Tested up to: 4.8
-Stable tag: 0.0.6
+Stable tag: 0.0.8
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 
@@ -16,6 +16,9 @@ The MJ-ACF-Fields Plugin has predefined page-block fields which is usable
 with ACF Grid Layout. It works well with our mjtheme
 
 == Changelog ==
+
+= 0.0.8 =
+* Fixes
 
 = 0.0.7 =
 * Move to subdirectory according to update rules
