@@ -17,6 +17,10 @@ with ACF Grid Layout. It works well with our mjtheme
 
 == Changelog ==
 
+= 0.0.7 =
+* Move to subdirectory according to update rules
+* Allow unsafe urls (due 7990 port)
+
 = 0.0.6 =
 * Fixing Auto Updater
 

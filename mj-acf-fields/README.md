@@ -100,6 +100,10 @@ _Filename_: page-block.php
 
 ## Release History
 
+* 0.0.7
+	* Move to subdirectory according to update rules
+	* Allow unsafe urls (due 7990 port)
+
 * 0.0.6
 	Bugfixing for Autoupdate
 
