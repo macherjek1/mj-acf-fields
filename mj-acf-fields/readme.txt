@@ -15,7 +15,19 @@ This plugin gives you prefedefined page-blocks which you can use with ACF Grid L
 The MJ-ACF-Fields Plugin has predefined page-block fields which is usable
 with ACF Grid Layout. It works well with our mjtheme
 
+== Installation ==
+
+Just install via Composer or zip
+
+
+== Frequently Asked Questions ==
+
+
+
 == Changelog ==
+
+= 1.0.0 =
+Release
 
 = 0.0.9 =
 Removing Files in root
@@ -47,3 +59,10 @@ Remove theme support require - not needed; commit message
 
 = 0.0.1 =
 Work in progress, initial Plugin
+
+== Upgrade Notice ==
+
+
+== Arbitrary section ==
+
+== A brief Markdown Example ==
