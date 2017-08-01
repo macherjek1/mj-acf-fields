@@ -100,6 +100,9 @@ _Filename_: page-block.php
 
 ## Release History
 
+* 0.0.9
+	* Removing Files in root
+
 * 0.0.8
 	* Fixes
 
