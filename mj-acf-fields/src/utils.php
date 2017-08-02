@@ -4,8 +4,6 @@ namespace Utils;
 function mj_get_template_part( $file, $paths = array()) {
     $filepath = template_exists($file, $paths);
 
-    //var_dump($filepath);
-
     // or use ith from plugin path
     if(!$filepath)
         $filepath = MJ_ACF_FIELDS_PLUGIN_DIR . 'templates/' . $file . '.php';

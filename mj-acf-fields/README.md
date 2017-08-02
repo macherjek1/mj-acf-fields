@@ -50,8 +50,8 @@ create a file named title-block inside the visual-editor folder.
 	----- title-block.php
 	----- other-page-block.php
 
-	----- loop
-	------- loop-some-cpt.php
+	----- custom
+	------- custom-page-block.php
 ```
 
 This should also work in your parent theme (if you don't use
@@ -100,9 +100,12 @@ _Filename_: page-block.php
 
 ## Release History
 
+* 1.0.1
+	* Rename `loop`Folder to `custom`!
+
 * 1.0.0
 	* Release
-	
+
 * 0.0.9
 	* Removing Files in root
 

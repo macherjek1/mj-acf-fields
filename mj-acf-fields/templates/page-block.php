@@ -4,8 +4,9 @@
   <?php get_template_part('template-parts/flexibles/custom/' . get_sub_field('page_block_name')); ?>
   <?php
   				Utils\mj_get_template_part(get_sub_field('page_block_name'), apply_filters('mj/acf_fields/template_loop_paths', [
-  					'template-parts/flexibles/visual-editor/custom',
-  					'template-parts/visual-editor/loops'
+  					'template-parts/flexibles/visual-editor/custom', // deprecated
+  					'template-parts/visual-editor/loops', // deprecated
+            'template-parts/visual-editor/custom'
   				]));
   ?>
 <?php
@@ -48,7 +49,4 @@
       </div>
     </div>
   <?php endif; wp_reset_postdata(); ?>
-
-
-
 <?php endif; ?>
