@@ -4,7 +4,7 @@ Donate link: http://www.regenrek.at
 Tags: acf, fields
 Requires at least: 4.7
 Tested up to: 4.8
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 
@@ -25,6 +25,9 @@ Just install via Composer or zip
 
 
 == Changelog ==
+
+= 1.0.2 =
+DS_Store removed
 
 = 1.0.1 =
 Rename `loop`Folder to `custom`!

@@ -100,6 +100,9 @@ _Filename_: page-block.php
 
 ## Release History
 
+* 1.0.2
+	DS_Store removed
+
 * 1.0.1
 	* Rename `loop`Folder to `custom`!
 
