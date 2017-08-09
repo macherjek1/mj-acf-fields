@@ -15,7 +15,6 @@ function mj_get_template_part( $file, $paths = array()) {
     echo $data;
 }
 
-
 function template_exists($file, $paths) {
   foreach($paths as $path) {
     $filepath = $path . '/' . $file . '.php';

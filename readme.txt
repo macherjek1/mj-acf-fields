@@ -1,6 +1,6 @@
 === Plugin Name ===
-Contributors: Kevin Kernegger
-Donate link: http://www.regenrek.at
+Contributors: Kevin Regenrek
+Donate link: http://www.macherjek.at
 Tags: acf, fields
 Requires at least: 4.7
 Tested up to: 4.8
@@ -27,7 +27,7 @@ Just install via Composer or zip
 == Changelog ==
 
 = 1.0.2 =
-DS_Store removed
+Removed Bitbucket Server. Added Github
 
 = 1.0.1 =
 Rename `loop`Folder to `custom`!

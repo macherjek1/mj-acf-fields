@@ -14,19 +14,13 @@ Composer:
 	"repositories": {
         "mj-acf-fields": {
             "type": "vcs",
-            "url": "git@code.macherjek.com/mjplug/mj-acf-fields.git"
+            "url": "git@github.com/macherjek1/mj-acf-fields.git"
         }
     },
     "require": {
-		"macherjek/wp-acf-fields": "^0.0.1",
+		"macherjek/wp-acf-fields": "~1.0.0",
 	}
 ```
-
-Notice: Since this a private repository you need a valid public key
-to install the plugin
-
-or install it via upload (.zip)
-
 
 ## Usage
 
@@ -73,12 +67,18 @@ _Filename_: content-block.php
 
 ### Page Block
 
-A Page Block is intended to loop over custom post types, posts,
-page or anything you want. You can choose the Post Type in the checkbox
-or choose your own Template. Beware that you need to put your
-custom loop templates inside your theme/template-parts/visual-editor/loops
-folder. See examples for more information.
+'Page Blocks' give you the ability to extend the default
+page blocks with custom logic.
 
+Since we just give you a bunch of predefined Blocks you can your
+own Blocks without any needed Fields. (If you need a Page Block
+with fields you need to create anyway your own).
+
+Put your Custom Page Blocks into the ``theme/template-parts/visual-editor/loops``
+folder.
+
+You could also choose a custom Post Type from the list which you want
+to loop over
 
 _Filename_: page-block.php
 
@@ -101,7 +101,7 @@ _Filename_: page-block.php
 ## Release History
 
 * 1.0.2
-	DS_Store removed
+	Removed Bitbucket Server. Added Github.
 
 * 1.0.1
 	* Rename `loop`Folder to `custom`!

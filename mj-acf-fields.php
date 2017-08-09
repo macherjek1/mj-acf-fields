@@ -2,10 +2,10 @@
 /*
  * Plugin Name: MJ - ACF Group Fields
  * Description: A theme support plugin MJ Theme
- * Author: Kevin Kernegger
- * Author URI: http://regenrek.at
+ * Author: Kevin Regenrek
+ * Author URI: http://www.macherjek.at
  * Version: 1.0.2
- * Plugin URI: http://code.macherjek.com:7990/projects/MJPLUG/repos/mj-acf-fields/browse
+ * Plugin URI: https://github.com/macherjek1/mj-acf-fields
  */
 
 define( 'MJ_ACF_FIELDS_PLUGIN_DIR', plugin_dir_path( __FILE__  ));
@@ -18,8 +18,6 @@ if (file_exists($composer = MJ_ACF_FIELDS_PLUGIN_DIR . '/vendor/autoload.php')) 
 }
 
 require plugin_dir_path(__FILE__) . '/src/utils.php';
-require plugin_dir_path(__FILE__) . '/src/BitbucketServerApi.php';
-
  add_action('after_setup_theme', function () {
  	require __DIR__ . '/src/main.php';
  }, 100);
