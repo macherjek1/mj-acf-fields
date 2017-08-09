@@ -14,7 +14,7 @@ Composer:
 	"repositories": {
         "mj-acf-fields": {
             "type": "vcs",
-            "url": "git@github.com/macherjek1/mj-acf-fields.git"
+            "url": "git@github.com:macherjek1/mj-acf-fields.git"
         }
     },
     "require": {
