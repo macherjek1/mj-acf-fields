@@ -100,6 +100,9 @@ _Filename_: page-block.php
 
 ## Release History
 
+* 1.0.3
+	Small Fixes
+
 * 1.0.2
 	Removed Bitbucket Server. Added Github.
 

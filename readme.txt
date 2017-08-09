@@ -3,8 +3,8 @@ Contributors: Kevin Regenrek
 Donate link: http://www.macherjek.at
 Tags: acf, fields
 Requires at least: 4.7
-Tested up to: 4.8
-Stable tag: 1.0.2
+Tested up to: 4.8.1
+Stable tag: 1.0.3
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 
@@ -20,6 +20,9 @@ with ACF Grid Layout. It works well with our mjtheme
 1. Just install via Composer or zip
 
 == Changelog ==
+
+= 1.0.3 =
+Small Fixes
 
 = 1.0.2 =
 Removed Bitbucket Server. Added Github

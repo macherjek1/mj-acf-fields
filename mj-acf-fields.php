@@ -4,7 +4,7 @@
  * Description: A theme support plugin MJ Theme
  * Author: Kevin Regenrek
  * Author URI: http://www.macherjek.at
- * Version: 1.0.2
+ * Version: 1.0.3
  * Plugin URI: https://github.com/macherjek1/mj-acf-fields
  */
 
